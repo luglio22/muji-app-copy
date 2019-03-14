@@ -1,0 +1,212 @@
+.main-side
+  %ul.side-content
+    %li.side-category
+      .side-content--feature
+        .special-label
+        %h3.title-feature 特集
+        .side-content--feature--inner
+          .side-content--feature--inner--text_feature
+            = link_to "特集", "#", class: "side-text_feature"
+          .side-content--feature--inner--text_new_product
+            =link_to "新商品", "#", class: "new_product-text"
+      .side-content--useful
+        = link_to "#", class: "make_item_useful" do
+          %h3.useful-text 毎日使うものを便利に。
+          .net-limit-text ネット限定、対象商品配送料無料
+      .side-content--good-item
+        %h3.side-content--good-item--best-purchase-text お買い得
+        .side-content--good-item--best-purchase-list
+          %ul.side-content--good-item--best-purchase-list--wrapper
+            %li.best-purchase-category--limited-price
+              =link_to "期間限定", "#", class: "side-limited-price"
+            %li.best-purchase-category--all-purchase
+              =link_to "まとめ買い", "#", class: "side-all-purchase"
+            %li.best-purchase-category--junk-item
+              =link_to "切れ端、不揃い、大容量", "#", class: "side-junk-item"
+            %li.best-purchase-category--sale-item
+              =link_to "SALE", "#", class: "side-sale-item"
+            %li.best-purchase-category--outlet-item
+              =link_to "アウトレット", "#", class: "side-outlet-item"
+      .side-content-clothing
+        .side-content-clothing--wrapper
+          .side-content-clothing--wrapper--title 衣料品
+          %ul.side-content-clothing--wrapper--list
+            %li.side--ladies-wear
+              =link_to "婦人ウェア", "#", class: "side--ladies-wear--link"
+            %li.side--ladies--inner-wear
+              =link_to "婦人インナーウェア", "#", class: "side--ladies-inner-wear--link"
+            %li.side--mens-wear
+              =link_to "紳士ウェア", "#", class: "side--mens-wear--link"
+            %li.side--mens-inner-wear
+              =link_to "紳士インナーウェア", "#", class: "side--mens-inner-wear--link"
+            %li.side--socks
+              =link_to "靴下", "#", class: "side--socks--link"
+            %li.side--shoes
+              =link_to "靴", "#", class: "side--shoes--link"
+            %li.side--mens-bag
+              =link_to "バッグ", "#", class: "side--bag--link"
+            %li.side--ornament-miscellaneous-goods
+              =link_to "装飾雑貨", "#", class: "side--ornament-miscellaneous-goods--link"
+            %li.side--muji-labo
+              =link_to "MUJI Labo", "#", class: "side--muji-labo--link"
+      .side-content--kids
+        .side-content--kids--wrapper
+          .side-content--kids--wrapper--title 子供・マタニティ
+          %ul.side-content--kids--wrapper--list
+            %li.side--baby
+              =link_to "ベビー (80-100cm)", "#", class: "side--baby--link"
+            %li.side--kids
+              =link_to "キッズ (110-150cm)", "#", class: "side--kids--link"
+            %li.side--maternity
+              =link_to "マタニティ・新生児", "#", class: "side--maternity--link"
+            %li.side--childrens-products
+              =link_to "子供用品・家具・三輪車", "#", class: "side--childrens-products--link"
+      .side-content--furniture
+        .side-content--furniture--wrapper
+          .side-content--furniture--wrapper--title 家具・インテリア・家電
+          %ul.side-content--furniture--wrapper--list
+            %li.side--storage
+              =link_to "収納家具", "#", class: "side--storage--link"
+            %li.side--unit-shelf
+              =link_to "ユニットシェルフ", "#", class: "side--unit-shelf--link"
+            %li.side--cabinet
+              =link_to "収納用品", "#", class: "side--cabinet--link"
+            %li.side--table-chair
+              =link_to "テーブル・チェア", "#", class: "side--table-chair--link"
+            %li.side--desk-chair
+              =link_to "デスク・チェア", "#", class: "side--desk-chair--link"
+            %li.side--bed
+              =link_to "ベッド", "#", class: "side--bed--link"
+            %li.side--comforter
+              =link_to "布団・寝具", "#", class: "side--comforter--link"
+            %li.side--sofa
+              =link_to "ソファー", "#", class: "side--sofa--link"
+            %li.side--rug-cushion
+              =link_to "ラグ・クッション・スリッパ", "#", class: "side--rug-cushion--link"
+            %li.side--curtain-blind
+              =link_to "カーテン・ブラインド", "#", class: "side--curtain-blind--link"
+            %li.side--interior-item
+              =link_to "インテリア用品", "#", class: "side--interior-item--link"
+            %li.side--home-electric
+              =link_to "家電・照明", "#", class: "side--home-electric--link"
+      .side-content--health-beauty
+        .side-content--health-beauty--wrapper
+          .side-content--health-beauty--wrapper--title ヘルス&ビューティ
+          %ul.side-content--health-beauty--wrapper--list
+            %li.side--skin-care
+              =link_to "スキンケア用品", "#", class: "side--skin-care--link"
+            %li.side--make-up
+              =link_to "メイクアップ用品", "#", class: "side--make-up--link"
+            %li.side--hair-oral-care
+              =link_to "ヘアーケア・オーラルケア", "#", class: "side--hair-oral-care--link"
+            %li.side--body-care
+              =link_to "ボディケア・入浴剤", "#", class: "side--body-care--link"
+            %li.side--aroma-fragrance
+              =link_to "アロマ・フレグランス", "#", class: "side--aroma-fragrance--link"
+            %li.side--porch
+              =link_to "ポーチ・小分け容器", "#", class: "side--porch--link"
+      .side-content--miscellaneous-goods
+        .side-content--miscellaneous-goods--wrapper
+          .side-content--miscellaneous-goods--wrapper--title 雑貨・日用品
+          %ul.side-content--miscellaneous-goods--wrapper--list
+            %li.side--dishes
+              =link_to "食器", "#", class: "side--dishes--link"
+            %li.side--kitchen
+              =link_to "キッチン用品", "#", class: "side--kitchen--link"
+            %li.side--towel-bath-toilet
+              =link_to "タオル・バス・トイレ用品", "#", class: "side--towel-bath-toilet--link"
+            %li.side--clean-washing-hanger
+              =link_to "掃除・洗濯用品・ハンガー", "#", class: "side--clean-washing-hanger--link"
+            %li.side--stationery
+              =link_to "文房具", "#", class: "side--stationery--link"
+            %li.side--album
+              =link_to "アルバム", "#", class: "side--album--link"
+            %li.side--book-bgm
+              =link_to "本・BGM", "#", class: "side--book-bgm--link"
+            %li.side--bicycle
+              =link_to "自転車", "#", class: "side--bicycle--link"
+            %li.side--travel
+              =link_to "トラベル用品", "#", class: "side--travel--link"
+      .side-content--foods
+        .side-content--foods--wrapper
+          .side-content--foods--wrapper--title 食品
+          %ul.side-content--foods--wrapper--list
+            %li.side--curry
+              =link_to "カレー", "#", class: "side--curry--link"
+            %li.side--retort
+              =link_to "レトルト", "#", class: "side--retort--link"
+            %li.side--dry-foods
+              =link_to "発行ぬかどこ・乾物・調味料", "#", class: "side--dry-foods--link"
+            %li.side--frozen-foods
+              =link_to "冷凍食品", "#", class: "side--frozen-foods--link"
+            %li.side--confectionery-material
+              =link_to "製菓材料", "#", class: "side--confectionery-material--link"
+            %li.side--snacks
+              =link_to "菓子", "#", class: "side--snacks--link"
+            %li.side--soft-drinks
+              =link_to "飲料", "#", class: "side--soft-drinks--link"
+            %li.side--bicycle
+      .side-content--green-flower
+        .side-content--green-flower--wrapper
+          .side-content--green-flower--wrapper--title 花・グリーン
+          %ul.side-content--green-flower--wrapper--list
+            %li.side--interior-green
+              =link_to "インテリアフラワー", "#", class: "side--interior-green--link"
+            %li.side--flowers
+              =link_to "花", "#", class: "side--flowers--link"
+            %li.side--herb-cultivation
+              =link_to "ハーブ・栽培セット", "#", class: "side--herb-cultivation--link"
+            %li.side--garden-furniture
+              =link_to "ガーデンファニチャー・雑貨", "#", class: "side--garden-furniture--link"
+      .side-content--farm-fresh
+        .side-content--farm-fresh--wrapper
+          .side-content--farm-fresh--wrapper--title 産地直送
+          %ul.side-content--farm-fresh--wrapper--list
+            %li.side--farm-fresh-text
+              =link_to "諸国良品", "#", class: "side--farm-fresh-text--link"
+      .side-content--muji-camp
+        .side-content--muji-camp--wrapper
+          .side-content--muji-camp--wrapper--title キャンプ場
+          %ul.side-content--muji-camp--wrapper--list
+            %li.side--muji-camp-text
+              =link_to "無印良品キャンプ場", "#", class: "side--muji-camp-text--link"
+      .side-content--MUJI-support
+        .side-content--MUJI-support--wrapper
+          .side-content--MUJI-support--wrapper--title MUJI SUPPORT
+          %ul.side-content--MUJI-support--wrapper--list
+            %li.side--living-consultation
+              =link_to "暮らしの収納相談", "#", class: "side--living-consultation--link"
+            %li.side--make-room-consultation
+              =link_to "部屋づくり相談", "#", class: "side--make-room-consultation--link"
+            %li.side--size-order-service
+              =link_to "サイズオーダーサービス", "#", class: "side--size-order-service--link"
+            %li.side--attachment-service
+              =link_to "各種取り付けサービス", "#", class: "side--attachment-service--link"
+      .side-content--MUJI-HOUSE-VISION
+        .side-content--MUJI-HOUSE-VISION--wrapper
+          .side-content--MUJI-HOUSE-VISION--wrapper--title MUJI HOUSE VISION
+          %ul.side-content--MUJI-HOUSE-VISION--wrapper--list
+            %li.side--MUJI-house
+              =link_to "無印良品の家", "#", class: "side--MUJI-house--link"
+            %li.side--MUJI-renovation
+              =link_to "無印良品のリノベーション", "#", class: "side--MUJI-renovation--link"
+            %li.side--MUJI-apartment-complexes
+              =link_to "無印良品の団地", "#", class: "side--MUJI-apartment-complexes--link"
+            %li.side--MUJI-renovation-club
+              =link_to "MUJI Renovation Club", "#", class: "side--MUJI-renovation-club--link"
+            %li.side--living-parts-consultation
+              =link_to "暮らしのパーツ相談", "#", class: "side--living-parts-consultation--link"
+            %li.side--corporation-service
+              =link_to "法人サービス", "#", class: "side--corporation-service--link"
+      .side-content--IDEE
+        .side-content--IDEE--wrapper
+          .side-content--IDEE--wrapper--title IDÉE
+          %ul.side-content--IDEE--wrapper--list
+            %li.side--IDEE-text
+              =link_to "MUJI meets IDÉE", "#", class: "side--IDEE-text--link"
+      .side-content--fund-raising
+        .side-content--fund-raising--wrapper
+          .side-content--fund-raising--wrapper--title 募金
+          %ul.side-content--fund-raising--wrapper--list
+            %li.side--fund-raising-text
+              =link_to "募金券", "#", class: "side--fund-raising-text--link"

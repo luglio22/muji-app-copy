@@ -1,4 +1,6 @@
+= render "shared/header"
 .product-top
+  = render "shared/side"
   .product-top--page
     .product-top--page--content
       = link_to "#", class: "top-page-img-main-link" do
@@ -193,3 +195,5 @@
             =link_to "#",class: "product-top--page--products-list--content--cloth-category--MUJI-Labo--link" do
               =image_tag "//img.muji.net/img/item/4550182081701_01_95.jpg", class: "product-top--page--products-list--content--cloth-category--MUJI-Labo--img"
               %span.product-top--page--products-list--content--cloth-category--MUJI-Labo MUJI Labo
+    = render "shared/notice"
+    = render "shared/footer"

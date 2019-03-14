@@ -1,0 +1,102 @@
+.product-top--important-information{
+  position: relative;
+  margin: 0 auto 50px;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 15px;
+  display: block;
+
+  &--header{
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &--title{
+      max-width: 1440px;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 30px 10px 20px;
+      align-items: center;
+      overflow: auto;
+
+      h1.product-top--important-information--header--title{
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0 15px 0 0;
+        color: #484848;
+        padding: 0;
+      }
+
+      &--all{
+        float: right;
+
+        .product-top--important-information--header--title--all--link{
+          text-decoration: none;
+          color: #60B3FA;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  ul.product-top--important-information--list{
+    color: #95989A;
+    font-size: 1.3rem;
+    margin: 20px 0;
+
+    li.product-top--important-information--list--content-up{
+      display: flex;
+      margin-bottom: 5px;
+      list-style: none;
+
+      time.product-top--important-information--list--content-up--time{
+        margin: 0 10px 5px 0;
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+      }
+      .product-top--important-information--list--content-up--text{
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        font-size: 13px;
+      }
+    }
+    li.product-top--important-information--list--content-middle{
+      display: flex;
+      margin-bottom: 5px;
+      list-style: none;
+
+      time.product-top--important-information--list--content-middle--time{
+        margin: 0 10px 5px 0;
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+      }
+      .product-top--important-information--list--content-middle--text{
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        font-size: 13px;
+      }
+    }
+    li.product-top--important-information--list--content-down{
+      display: flex;
+      margin-bottom: 5px;
+      list-style: none;
+
+      time.product-top--important-information--list--content-down--time{
+        margin: 0 10px 5px 0;
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+      }
+      .product-top--important-information--list--content-down--text{
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        font-size: 13px;
+      }
+    }
+  }
+}

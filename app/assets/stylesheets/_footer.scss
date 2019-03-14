@@ -1,0 +1,471 @@
+.footer_top{
+  position: static;
+  bottom: auto;
+  width: 100%;
+  margin-top: 30px;
+  background: #f7f7f7;
+  display: block;
+
+  &--content{
+    display: flex;
+
+    ul.footer_top--content--left{
+      list-style: none;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li.footer_top--content--left--title{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 12px;
+        position: relative;
+      }
+      ul.footer_top--content--left--sns-icon{
+        margin: 140px 0 10px 0;
+        padding: 0;
+        display: flex;
+
+        li.footer_top--content--left--sns-icon--Twitter{
+          display: inline-block;
+          margin-left: 0;
+          margin-right: 6px;
+          opacity: 0.3;
+
+          .footer_top--content--left--sns-icon--Twitter--link{
+            font-size: 12px;
+
+            .footer_top--content--left--sns-icon--Twitter--img{
+              vertical-align: bottom;
+              color: #777;
+            }
+          }
+        }
+        li.footer_top--content--left--sns-icon--Facebook{
+          display: inline-block;
+          margin-left: 0;
+          margin-right: 6px;
+          opacity: 0.3;
+
+          .footer_top--content--left--sns-icon--Facebook--link{
+            font-size: 12px;
+
+            .footer_top--content--left--sns-icon--Facebook--img{
+              vertical-align: bottom;
+              color: #777;
+            }
+          }
+        }
+        li.footer_top--content--left--sns-icon--Youtube{
+          display: inline-block;
+          margin-left: 0;
+          margin-right: 6px;
+          opacity: 0.3;
+
+          .footer_top--content--left--sns-icon--Youtube--link{
+            font-size: 12px;
+
+            .footer_top--content--left--sns-icon--Youtube--img{
+              vertical-align: bottom;
+              color: #777;
+            }
+          }
+        }
+        li.footer_top--content--left--sns-icon--Instagram{
+          display: inline-block;
+          margin-left: 0;
+          margin-right: 6px;
+          opacity: 0.3;
+
+          .footer_top--content--left--sns-icon--Instagram--link{
+            font-size: 12px;
+
+            .footer_top--content--left--sns-icon--Instagram--img{
+              vertical-align: bottom;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+    ul.footer_top--content--center-left{
+      padding: 0;
+      border: 0;
+      list-style: none;
+      padding-left: 100px;
+
+      li.footer_top--content--center-left--about-store{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-left--about-store--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-left--event{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-left--event--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-left--living-lab{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-left--living-lab--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-left--MUJI-SUPPORT{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-left--MUJI-SUPPORT--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-left--MUJI-HOUSE-VISION{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-left--MUJI-HOUSE-VISION--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-left--inquiry{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-left--inquiry--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+    }
+    ul.footer_top--content--center{
+      padding: 0;
+      border: 0;
+      list-style: none;
+      padding-left: 100px;
+
+      li.footer_top--content--center--MUJI-HOUSE{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center--MUJI-HOUSE--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center--cafemeal-MUJI{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center--cafemeal-MUJI--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center--Found-MUJI{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center--Found-MUJI--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center--camp{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center--camp--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center--MUJI-BOOKS{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center--MUJI-BOOKS--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center--MUJI-HOTEL{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center--MUJI-HOTEL--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+    }
+    ul.footer_top--content--center-right{
+      padding: 0;
+      border: 0;
+      list-style: none;
+      padding-left: 100px;
+
+      li.footer_top--content--center-right--MUJI-passport{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-right--MUJI-passport--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-right--catalog{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-right--catalog--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-right--MUJI-card{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-right--MUJI-card--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-right--MUJI-GIFT-CARD{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-right--MUJI-GIFT-CARD--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-right--for-company{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-right--for-company--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--center-right--Tax-free{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--center-right--Tax-free--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+    }
+    ul.footer_top--content--right{
+      padding: 0;
+      border: 0;
+      list-style: none;
+      padding-left: 100px;
+
+      li.footer_top--content--right--new-release{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--right--new-release--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--right--careers{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--right--careers--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--right--MUJI-messages{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--right--MUJI-messages--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--right--about-MUJI{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--right--about-MUJI--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+      li.footer_top--content--right--company-details{
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        margin-right: 20px;
+        position: relative;
+
+        .footer_top--content--right--company-details--link{
+          text-decoration: none;
+          color: #333;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &--nav{
+    overflow: auto;
+
+    ul.footer_top--nav--left{
+      list-style: none;
+      float: left;
+
+      li.footer_top--nav--left--country{
+        padding: 20px 10px;
+        font-size: 12px;
+        display: inline-block;
+        .footer_top--nav--left--country--link{
+          text-decoration: none;
+          align-items: center;
+          color: #333;
+
+          .footer_top--nav--left--country--img{
+            width: 18px;
+            height: 12px;
+            margin-right: 8px;
+            vertical-align: middle;
+          }
+        }
+      }
+      li.footer_top--nav--left--about-security{
+        padding: 20px 10px;
+        font-size: 12px;
+        display: inline-block;
+
+        .footer_top--nav--left--about-security--link{
+          text-decoration: none;
+          color: #333;
+        }
+      }
+      li.footer_top--nav--left--site-map{
+        padding: 20px 10px;
+        font-size: 12px;
+        display: inline-block;
+
+        .footer_top--nav--left--site-map--link{
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+    .footer_top--nav--right{
+      font-size: 12px;
+      padding: 30px 10px;
+      color: #555555;
+      float: right;
+    }
+  }
+}

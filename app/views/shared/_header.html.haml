@@ -1,0 +1,26 @@
+.header_top
+  = link_to root_path, class: "header-logo" do
+    = image_tag "https://img.muji.net/img/common/logo-muji.svg", class: "logo-image"
+  .header_top--form
+    = form_for "#" do |f|
+      .header_top--form--search
+        = image_tag "https://img.muji.net/img/common/icon-search.svg",class: "search-icon-header"
+      = f.text_area :search, class: "header_search-box",placeholder: "商品名・商品番号を入力" do
+        .header_top--search--box--left-icon-box
+          = image_tag "https://img.muji.net/img/common/icon-search.svg", class: "icon-search-muji"
+  .header_top--right
+    .header_top--right--shopping
+      = link_to "#", class: "account-logo" do
+        = image_tag "https://img.muji.net/img/common/icon-account.svg",class: "img_account"
+        .header_top--right--account--label ログイン
+        %ul.header_top--right--account--table
+          %li.header_top--right--account--table--up
+            = link_to "ログイン", "#", class: "header_top--right--account--table--up--text"
+          %li.header_top--right--account--table--down
+            = link_to "新規登録","#", class: "header_top--right--account--table--down--text"
+    .header_top--right--support
+      = link_to "#", class: "support-logo" do
+        = image_tag "https://img.muji.net/img/common/icon-info.svg",class: "img_support"
+        .header_top--right--support--label サポート
+
+

@@ -1,0 +1,1099 @@
+.main-side{
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #f7f7f7;
+  max-width: 1440px;
+  width: 230px;
+  display:inline-flex;
+
+  ul.side-content{
+    margin: 0;
+    padding: 0;
+
+    li.side-category{
+      list-style: none;
+
+      .side-content--feature{
+        .special-label{
+        }
+        h3.title-feature{
+          margin: 10px;
+        }
+        &--inner{
+          &--text_feature{
+            margin-bottom: 10px;
+            .side-text_feature{
+              text-decoration: none;
+              color: #333;
+              font-weight: bold;
+              font-size: 14px;
+              margin: 10px;
+            }
+          }
+          &--text_new_product{
+            margin-bottom: 20px;
+            .new_product-text{
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 14px;
+              color: #333;
+              margin: 10px;
+            }
+          }
+        }
+      }
+      .side-content--useful{
+        background: #f5f5f5;
+        border-top: 1px solid #ccc;
+        padding-bottom: 10px;
+
+        .make_item_useful{
+          text-decoration: none;
+
+          h3.useful-text{
+            font-size: 16px;
+            text-align: center;
+            color: #333;
+          }
+
+          .net-limit-text{
+            color: #333;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+      .side-content--good-item{
+        border-top: 1px solid #ccc;
+        position: static;
+
+        h3.side-content--good-item--best-purchase-text{
+          font-size: 17px;
+          font-weight: 400;
+          margin-left: 10px;
+        }
+        &--best-purchase-list{
+          ul.side-content--good-item--best-purchase-list--wrapper{
+            list-style: none;
+            padding: 0;
+            li.best-purchase-category--limited-price{
+              .side-limited-price{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.best-purchase-category--all-purchase{
+              margin: 5px;
+              .side-all-purchase{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+              }
+            }
+            li.best-purchase-category--junk-item{
+              margin: 5px;
+              .side-junk-item{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+              }
+            }
+            li.best-purchase-category--sale-item{
+              margin: 5px;
+              .side-sale-item{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+              }
+            }
+            li.best-purchase-category--outlet-item{
+              margin: 5px;
+              .side-outlet-item{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .side-content-clothing{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+
+          ul.side-content-clothing--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--ladies-wear{
+              margin-top: 15px;
+              .side--ladies-wear--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--ladies--inner-wear{
+              margin-top: 10px;
+              .side--ladies-inner-wear--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--mens-wear{
+              .side--mens-wear--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+              margin-top: 10px;
+            }
+            li.side--mens-inner-wear{
+              margin-top: 10px;
+              .side--mens-inner-wear--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--socks{
+              margin-top: 10px;
+              .side--socks--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--shoes{
+              margin-top: 10px;
+              .side--shoes--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--mens-bag{
+              margin-top: 10px;
+              .side--bag--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--ornament-miscellaneous-goods{
+              margin-top: 10px;
+              .side--ornament-miscellaneous-goods--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--muji-labo{
+              margin-top: 10px;
+              .side--muji-labo--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--kids{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--kids--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--baby{
+              margin-top: 15px;
+              .side--baby--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--kids{
+              margin-top: 10px;
+              .side--kids--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--maternity{
+              margin-top: 10px;
+              .side--maternity--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--childrens-products{
+              margin-top: 10px;
+              .side--childrens-products--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--furniture{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--furniture--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--storage{
+              margin-top: 15px;
+              .side--storage--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--unit-shelf{
+              margin-top: 10px;
+              .side--unit-shelf--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--cabinet{
+              margin-top: 10px;
+              .side--cabinet--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--table-chair{
+              margin-top: 10px;
+              .side--table-chair--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--desk-chair{
+              margin-top: 10px;
+              .side--desk-chair--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--bed{
+              margin-top: 10px;
+              .side--bed--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--comforter{
+              margin-top: 10px;
+              .side--comforter--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--sofa{
+              margin-top: 10px;
+              .side--sofa--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--rug-cushion{
+              margin-top: 10px;
+              .side--rug-cushion--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--curtain-blind{
+              margin-top: 10px;
+              .side--curtain-blind--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--interior-item{
+              margin-top: 10px;
+              .side--interior-item--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--home-electric{
+              margin-top: 10px;
+              .side--home-electric--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--health-beauty{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--health-beauty--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--skin-care{
+              margin-top: 15px;
+              .side--skin-care--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--make-up{
+              margin-top: 10px;
+              .side--make-up--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--hair-oral-care{
+              margin-top: 10px;
+              .side--hair-oral-care--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--body-care{
+              margin-top: 10px;
+              .side--body-care--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--aroma-fragrance{
+              margin-top: 10px;
+              .side--aroma-fragrance--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--porch{
+              margin-top: 10px;
+              .side--porch--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--miscellaneous-goods{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--miscellaneous-goods--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--dishes{
+              margin-top: 15px;
+              .side--dishes--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--kitchen{
+              margin-top: 10px;
+              .side--kitchen--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--towel-bath-toilet{
+              margin-top: 10px;
+              .side--towel-bath-toilet--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--clean-washing-hanger{
+              margin-top: 10px;
+              .side--clean-washing-hanger--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--stationery{
+              margin-top: 10px;
+              .side--stationery--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--album{
+              margin-top: 10px;
+              .side--album--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--book-bgm{
+              margin-top: 10px;
+              .side--book-bgm--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--bicycle{
+              margin-top: 10px;
+              .side--bicycle--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--travel{
+              margin-top: 10px;
+              .side--travel--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--foods{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--foods--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--curry{
+              margin-top: 15px;
+              .side--curry--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--retort{
+              margin-top: 10px;
+              .side--retort--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--dry-foods{
+              margin-top: 10px;
+              .side--dry-foods--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--frozen-foods{
+              margin-top: 10px;
+              .side--frozen-foods--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--confectionery-material{
+              margin-top: 10px;
+              .side--confectionery-material--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--snacks{
+              margin-top: 10px;
+              .side--snacks--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--soft-drinks{
+              margin-top: 10px;
+              .side--soft-drinks--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--green-flower{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--green-flower--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--interior-green{
+              margin-top: 15px;
+              .side--interior-green--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--flowers{
+              margin-top: 10px;
+              .side--flowers--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--herb-cultivation{
+              margin-top: 10px;
+              .side--herb-cultivation--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--garden-furniture{
+              margin-top: 10px;
+              .side--garden-furniture--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--farm-fresh{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--farm-fresh--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--farm-fresh-text{
+              margin-top: 15px;
+              .side--farm-fresh-text--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--muji-camp{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--muji-camp--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--muji-camp-text{
+              margin-top: 15px;
+              .side--muji-camp-text--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--MUJI-support{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--MUJI-support--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--living-consultation{
+              margin-top: 15px;
+              .side--living-consultation--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--make-room-consultation{
+              margin-top: 10px;
+              .side--make-room-consultation--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--size-order-service{
+              margin-top: 10px;
+              .side--size-order-service--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--attachment-service{
+              margin-top: 10px;
+              .side--attachment-service--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--MUJI-HOUSE-VISION{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--MUJI-HOUSE-VISION--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--MUJI-house{
+              margin-top: 15px;
+              .side--MUJI-house--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--MUJI-renovation{
+              margin-top: 10px;
+              .side--MUJI-renovation--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--MUJI-apartment-complexes{
+              margin-top: 10px;
+              .side--MUJI-apartment-complexes--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--MUJI-renovation-club{
+              margin-top: 10px;
+              .side--MUJI-renovation-club--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--living-parts-consultation{
+              margin-top: 10px;
+              .side--living-parts-consultation--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+            li.side--corporation-service{
+              margin-top: 10px;
+              .side--corporation-service--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--IDEE{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--IDEE--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--IDEE-text{
+              margin-top: 15px;
+              .side--IDEE-text--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+      .side-content--fund-raising{
+        position: static;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+
+        &--wrapper{
+          margin-top: 10px;
+          &--title{
+            font-size: 17px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
+          ul.side-content--fund-raising--wrapper--list{
+            list-style: none;
+            padding: 0;
+
+            li.side--fund-raising-text{
+              margin-top: 15px;
+              .side--fund-raising-text--link{
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
