@@ -9,6 +9,20 @@
           .new-user-content--main--add-message--content--text ※メンバー情報の変更は、ご注文前に行ってください
           .i.far.fa-clone
           = link_to "ご注文後の変更・追加、一部商品のキャンセルについて","#",class: "new-user-content--main--add-message--content--alert-text"
+      .new-user-content--main--error
+        %ul.new-user-content--main--error--message
+          %li.new-user-content--main--error--message--family お名前(姓)は必須です。
+          %li.new-user-content--main--error--message--last お名前(名)は必須です。
+          %li.new-user-content--main--error--message--jp_fa フリガナ(姓)は必須です。
+          %li.new-user-content--main--error--message--jp_la フリガナ(名)は必須です。
+          %li.new-user-content--main--error--message--postal-code 郵便番号は必須です。
+          %li.new-user-content--main--error--message--year 生年月日の年は必須です。
+          %li.new-user-content--main--error--message--month 生年月日の月は必須です。
+          %li.new-user-content--main--error--message--day 生年月日の日は必須です。
+          %li.new-user-content--main--error--message--prefecture 住所は必須です。
+          %li.new-user-content--main--error--message--city 住所は必須です。
+          %li.new-user-content--main--error--message--address 住所は必須です。
+          %li.new-user-content--main--error--message--phone 電話番号は必須です。
       %table.new-user-content--main--login
         %caption.new-user-content--main--login--titile ログイン情報
         %tbody.new-user-content--main--login--info

@@ -53,6 +53,69 @@
         }
       }
     }
+
+    &--error{
+      color: #d00;
+      font-weight: bold;
+
+      ul.new-user-content--main--error--message{
+        background: #fdd;
+        display: table;
+        padding: 5px;
+        border-radius: 5px;
+        list-style: none;
+        width: 100%;
+        display: none;
+
+        li.new-user-content--main--error--message--family{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--last{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--jp_fa{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--jp_la{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--postal-code{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--year{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--month{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--day{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--prefecture{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--city{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--address{
+          display: none;
+        }
+
+        li.new-user-content--main--error--message--phone{
+          display: none;
+        }
+      }
+    }
   }
   table.new-user-content--main--login{
     width: 100%;
@@ -963,22 +1026,30 @@
       text-align: center;
       list-style: none;
 
+
       .new-user-content--main--bottom--list--btm{
         display: block;
         overflow: hidden;
-        padding: 5px;
         color: #fff;
         background: #333;
         font-weight: bold;
         text-decoration: none;
         font-size: 12px;
+        border-radius: 3px;
+
 
         &--link{
           background: #333;
           color: #fff;
           display: block;
           border: none;
-          padding-left: 50px;
+          padding-left: 10px;
+          width: 100%;
+          padding: 5px;
+
+        &:hover{
+          background: #7f0019;
+        }
         }
       }
     }
