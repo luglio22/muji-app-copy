@@ -1,0 +1,186 @@
+= render "shared/header"
+.new-user-content
+  .new-user-content--main
+    = form_for @user do |f|
+      %h1.new-user-content--main--title MUJI.net メンバー登録・変更
+      .new-user-content--main--text MUJI.netメンバーへのご登録、またはメンバー情報を変更できます。
+      .new-user-content--main--add-message
+        .new-user-content--main--add-message--content
+          .new-user-content--main--add-message--content--text ※メンバー情報の変更は、ご注文前に行ってください
+          .i.far.fa-clone
+          = link_to "ご注文後の変更・追加、一部商品のキャンセルについて","#",class: "new-user-content--main--add-message--content--alert-text"
+      %table.new-user-content--main--login
+        %caption.new-user-content--main--login--titile ログイン情報
+        %tbody.new-user-content--main--login--info
+          %tr.new-user-content--main--login--info--pc-mail
+            %th.new-user-content--main--login--info--pc-mail--left{:rowspan => "2"}
+              .new-user-content--main--login--info--pc-mail--left--text メールアドレス
+              .new-user-content--main--login--info--pc-mail--left--note   (PC,携帯のいずれか必須)
+            %td.new-user-content--main--login--info--pc-mail--right
+              .new-user-content--main--login--info--pc-mail--right--text PC:
+              = f.email_field :email, class: "new-user-content--main--login--info--pc-mail--right--email"
+              .new-user-content--main--login--info--pc-mail--right--note (半角英数字)
+              .new-user-content--main--login--info--pc-mail--right--example 例: mujitaro@muji.net
+          %tr.new-user-content--main--login--info--phone-mail
+            %td.new-user-content--main--login--info--phone-mail--right
+              .new-user-content--main--login--info--phone-mail--right--text 携帯:
+              %input.new-user-content--main--login--info--phone-mail--right--main
+              .new-user-content--main--login--info--phone-mail--right--at-mark @
+              %select.new-user-content--main--login--info--phone-mail--right--sub
+                %option{:value => ""} 選択してください
+                %option{:value => ""} docomo.ne.jp
+                %option{:value => ""} ezweb.ne.jp
+                %option{:value => ""} softbank.ne.jp
+              .new-user-content--main--login--info--phone-mail--right--note (半角英数字)
+              .new-user-content--main--login--info--phone-mail--right--example 例: mujitaro@docomo.ne.jp
+              .new-user-content--main--login--info--phone-mail--right--description ドメイン指定受信/拒否設定している場合は、「@muji.net」からの受信許可を設定してください。
+              .new-user-content--main--login--info--phone-mail--right--explain ※プルダウン選択不可ドメインは、PC欄にご登録ください。
+              = link_to "#" ,class: "new-user-content--main--login--info--phone-mail--right--not-able" do
+                .i.far.fa-clone
+                .new-user-content--main--login--info--phone-mail--right--not-able--text 使用できないメールアドレス
+          %tr.new-user-content--main--login--info--password
+            %th.new-user-content--main--login--info--password--left
+              .new-user-content--main--login--info--password--left--text ご希望のパスワード
+              .new-user-content--main--login--info--password--left--essential (必須)
+            %td.new-user-content--main--login--info--password--right
+              = f.password_field :password, class: "new-user-content--main--login--info--password--right--pass-form"
+              .new-user-content--main--login--info--password--right--text (半角英数字:8〜20文字)
+              .new-user-content--main--login--info--password--right--note 英字、数字をそれぞれ1文字以上使用してください。
+          %tr.new-user-content--main--login--info--confirm-pass
+            %th.new-user-content--main--login--info--confirm-pass--left
+              .new-user-content--main--login--info--confirm-pass--left--text ご希望のパスワード(確認)
+              .new-user-content--main--login--info--confirm-pass--left--note (必須)
+            %td.new-user-content--main--login--info--confirm-pass--right
+              = f.password_field :password, class: "new-user-content--main--login--info--confirm-pass--right--form"
+      %table.new-user-content--main--personal
+        %caption.new-user-content--main--personal--title お客様の情報
+        %tbody.new-user-content--main--personal--body
+          %tr.new-user-content--main--personal--body--name
+            %th.new-user-content--main--personal--body--name--left
+              .new-user-content--main--personal--body--name--left--text お名前
+              .new-user-content--main--personal--body--name--left--note (必須)
+            %td.new-user-content--main--personal--body--name--right
+              .new-user-content--main--personal--body--name--right--family-text 姓:
+              = f.text_field :family_name, class: "new-user-content--main--personal--body--name--right--family--form"
+              .new-user-content--main--personal--body--name--right--last-text 名:
+              = f.text_field :last_name, class: "new-user-content--main--personal--body--name--right--last--form"
+              .new-user-content--main--personal--body--name--right--note (全角)
+              .new-user-content--main--personal--body--name--right--ex 例 : 無印　太郎
+          %tr.new-user-content--main--personal--body--kana
+            %th.new-user-content--main--personal--body--kana--left
+              .new-user-content--main--personal--body--kana--left--text フリガナ
+              .new-user-content--main--personal--body--kana--left--note (必須)
+            %td.new-user-content--main--personal--body--kana--right
+              .new-user-content--main--personal--body--kana--right--family-text 姓:
+              = f.text_field :family_name_jp, class: "new-user-content--main--personal--body--kana--right--family--form"
+              .new-user-content--main--personal--body--kana--right--last-text 名:
+              = f.text_field :last_name_jp, class: "new-user-content--main--personal--body--kana--right--last--form"
+              .new-user-content--main--personal--body--kana--right--note (全角)
+              .new-user-content--main--personal--body--kana--right--ex 例 : ムジルシ　タロウ
+          %tr.new-user-content--main--personal--body--postal-code
+            %th.new-user-content--main--personal--body--postal-code--left
+              .new-user-content--main--personal--body--postal-code--left--text 郵便番号
+              .new-user-content--main--personal--body--postal-code--left--note (必須)
+            %td.new-user-content--main--personal--body--postal-code--right
+              .new-user-content--main--personal--body--postal-code--right--icon 〒
+              = f.text_field :postal_code, class: "new-user-content--main--personal--body--postal-code--right--form"
+              %botton.new-user-content--main--personal--body--postal-code--right--btn
+                =link_to "住所表示", "#", class: "new-user-content--main--personal--body--postal-code--right--btn--link"
+              .new-user-content--main--personal--body--postal-code--right--note (半角数字)
+              .new-user-content--main--personal--body--postal-code--right--description
+                .new-user-content--main--personal--body--postal-code--right--description--up 7桁の郵便番号を入力して「住所」ボタンを押してください。
+                .new-user-content--main--personal--body--postal-code--right--description--down 県・市区町村を郵便番号から自動検索し、入力されます。
+          %tr.new-user-content--main--personal--body--prefecture
+            %th.new-user-content--main--personal--body--prefecture--left
+              .new-user-content--main--personal--body--prefecture--left--text 住所
+              .new-user-content--main--personal--body--prefecture--left--note (必須)
+            %td.new-user-content--main--personal--body--prefecture--right
+              = f.text_field :prefecture, class: "new-user-content--main--personal--body--prefecture--right--form"
+              .new-user-content--main--personal--body--prefecture--right--box
+                .new-user-content--main--personal--body--prefecture--right--box--text 郵便番号より自動検索されます。
+              .new-user-content--main--personal--body--prefecture--right--ex 例: 東京都 豊島区
+          %tr.new-user-content--main--personal--body--city
+            %th.new-user-content--main--personal--body--city--left
+              .new-user-content--main--personal--body--city--left--text 以降の住所
+              .new-user-content--main--personal--body--city--left--add (町域)
+              .new-user-content--main--personal--body--city--left--note (必須)
+            %td.new-user-content--main--personal--body--city--right
+              = f.text_field :city, class: "new-user-content--main--personal--body--city--right--form"
+              .new-user-content--main--personal--body--city--right--text (全角)
+              .new-user-content--main--personal--body--city--right--ex 例: 東池袋
+          %tr.new-user-content--main--personal--body--address
+            %th.new-user-content--main--personal--body--address--left
+              .new-user-content--main--personal--body--address--left--text 丁目・番地
+              .new-user-content--main--personal--body--address--left--note (必須)
+            %td.new-user-content--main--personal--body--address--right
+              = f.text_field :add_ress, class: "new-user-content--main--personal--body--address--right--form"
+              .new-user-content--main--personal--body--address--right--text (全角)
+              .new-user-content--main--personal--body--address--right--ex 例: 3
+              .new-user-content--main--personal--body--address--right--description
+                .new-user-content--main--personal--body--address--right--description--text 番地がない場合は「番地なし」とご入力ください。
+              .new-user-content--main--personal--body--address--right--explanation
+                .new-user-content--main--personal--body--address--right--explanation--text FirefoxやSafariでは、「ー(全角ハイフン)、〜(全角チルダ)」を入力するとエラーメッセージが表示される場合があります。「ー(全角ハイフン)、〜(全角チルダ)」は半角で入力してください。
+          %tr.new-user-content--main--personal--body--building
+            %th.new-user-content--main--personal--body--building--left
+              .new-user-content--main--personal--body--building--left--text ビル・マンション名・部屋番号
+            %td.new-user-content--main--personal--body--building--right
+              = f.text_field :building, class: "new-user-content--main--personal--body--building--right--form"
+              .new-user-content--main--personal--body--building--right--text (全角)
+              .new-user-content--main--personal--body--building--right--ex 例: ムジ・ネットビル7F
+          %tr.new-user-content--main--personal--body--postal-name
+            %th.new-user-content--main--personal--body--postal-name--left
+              .new-user-content--main--personal--body--postal-name--left--text 様方
+            %td.new-user-content--main--personal--body--postal-name--right
+              = f.text_field :postal_name, class: "new-user-content--main--personal--body--postal-name--right--form"
+              .new-user-content--main--personal--body--postal-name--right--note 様方
+              .new-user-content--main--personal--body--postal-name--right--text (全角)
+          %tr.new-user-content--main--personal--body--phone
+            %th.new-user-content--main--personal--body--phone--left
+              .new-user-content--main--personal--body--phone--left--text お届け時に連絡可能な電話番号
+              .new-user-content--main--personal--body--phone--left--note (必須)
+            %td.new-user-content--main--personal--body--phone--right
+              = f.text_field :phonenumber, class: "new-user-content--main--personal--body--phone--right--form"
+              .new-user-content--main--personal--body--phone--right--text (半角数字)
+              .new-user-content--main--personal--body--phone--right--ex 例: 03-3989-4191
+              .new-user-content--main--personal--body--phone--right--message
+                .new-user-content--main--personal--body--phone--right--message--text 通話可能な電話番号をご入力してください。
+                .new-user-content--main--personal--body--phone--rightmessage--add (データ通信専用プランでご契約された電話番号は不可)
+          %tr.new-user-content--main--personal--body--tel
+            %th.new-user-content--main--personal--body--tel--left
+              .new-user-content--main--personal--body--tel--left--text 上記以外に連絡可能な電話番号
+            %td.new-user-content--main--personal--body--tel--right
+              %input.new-user-content--main--personal--body--tel--right--form
+              .new-user-content--main--personal--body--tel--right--text (半角数字)
+              .new-user-content--main--personal--body--tel--right--ex 例: 03-3989-4191
+          %tr.new-user-content--main--personal--body--gender
+            %th.new-user-content--main--personal--body--gender--left
+              .new-user-content--main--personal--body--gender--left--text 性別
+              .new-user-content--main--personal--body--gender--left--note (必須)
+            %td.new-user-content--main--personal--body--gender--right
+              -# =f.radio_button :gender class ".new-user-content--main--personal--body--gender--right--form"
+          %tr.new-user-content--main--personal--body--birth
+            %th.new-user-content--main--personal--body--birth--left
+              .new-user-content--main--personal--body--birth--left--text 生年月日
+              .new-user-content--main--personal--body--birth--left--note (必須)
+            %td.new-user-content--main--personal--body--birth--right
+              .new-user-content--main--personal--body--birth--right--text 西暦
+              .new-user-content--main--personal--body--birth--right--year
+                = f.text_field :year, class: "new-user-content--main--personal--body--birth--right--year--form"
+                .new-user-content--main--personal--body--birth--right--year--text 年
+              .new-user-content--main--personal--body--birth--right--month
+                = f.select :month, { one: "1" }, { prompt: "---" }, { class:"new-user-content--main--personal--body--birth--right--month--form" }
+                .new-user-content--main--personal--body--birth--right--month--text 月
+              .new-user-content--main--personal--body--birth--right--day
+                = f.select :day, { one: "1" }, { prompt: "---" }, { class:"new-user-content--main--personal--body--birth--right--day--form" }
+                .new-user-content--main--personal--body--birth--right--day--text 日
+              .new-user-content--main--personal--body--birth--right--note (半角数字)
+      %table.new-user-content--main--option
+      %table.new-user-content--main--login
+      %table.new-user-content--main--my-profile
+      %ul.new-user-content--main--bottom
+        %li.new-user-content--main--bottom--prev
+          =link_to "前のページに戻る", root_path, class: "new-user-content--main--bottom--prev--link"
+        %li.new-user-content--main--bottom--list
+          .new-user-content--main--bottom--list--btm
+            = button_tag "次に進む", class: "new-user-content--main--bottom--list--btm--link"
+= render "shared/footer"

@@ -68,3 +68,4 @@ group :production do
 end
   gem 'haml-rails'
   gem 'erb2haml'
+  gem 'devise'

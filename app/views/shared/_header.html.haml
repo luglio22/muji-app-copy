@@ -10,14 +10,32 @@
           = image_tag "https://img.muji.net/img/common/icon-search.svg", class: "icon-search-muji"
   .header_top--right
     .header_top--right--shopping
-      = link_to "#", class: "account-logo" do
-        = image_tag "https://img.muji.net/img/common/icon-account.svg",class: "img_account"
-        .header_top--right--account--label ログイン
+      = link_to "#", class: "shopping-logo" do
+        = image_tag "https://img.muji.net/img/common/icon-cart.svg",class: "img_shopping-cart"
+        .header_top--right--shopping--cart_label カート
+    .header_top--right--account
+      - if user_signed_in?
+        = link_to destroy_user_session_path,method: :delete, class: "header_top--right--account--logout" do
+          = image_tag "https://img.muji.net/img/common/icon-account.svg",class: "img_account"
+          .header_top--right--account--logout
+            .header_top--right--account--logout--family-name
+              =@user.family_name
+            .header_top--right--account--logout--family-name
+              =@user.last_name
         %ul.header_top--right--account--table
           %li.header_top--right--account--table--up
-            = link_to "ログイン", "#", class: "header_top--right--account--table--up--text"
+            = link_to "マイページ", users_path, class: "header_top--right--account--table--up--text"
           %li.header_top--right--account--table--down
-            = link_to "新規登録","#", class: "header_top--right--account--table--down--text"
+            = link_to "ログアウト",destroy_user_session_path,method: :delete, class: "header_top--right--account--table--down--text"
+      - else
+        = link_to new_user_registration_path, class: "account-logo" do
+          = image_tag "https://img.muji.net/img/common/icon-account.svg",class: "img_account"
+          .header_top--right--account--label ログイン
+        %ul.header_top--right--account--table
+          %li.header_top--right--account--table--up
+            = link_to "ログイン", user_session_path, class: "header_top--right--account--table--up--text"
+          %li.header_top--right--account--table--down
+            = link_to "新規登録",new_user_registration_path, class: "header_top--right--account--table--down--text"
     .header_top--right--support
       = link_to "#", class: "support-logo" do
         = image_tag "https://img.muji.net/img/common/icon-info.svg",class: "img_support"

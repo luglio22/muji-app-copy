@@ -1,0 +1,126 @@
+.login-main{
+  position: relative;
+  zoom: 1;
+
+  &--content{
+    width: 880px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+    font-size: 12px;
+
+    &--title{
+      margin: 0 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e6e6e6;
+
+      h1.login-main--content--title--text{
+        font-size: 28px;
+        font-weight: bold;
+        color: #191919;
+      }
+    }
+    &--form{
+      border: 5px solid #ccc;
+      padding: 15px;
+
+      &--title{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      &--text{
+        margin-bottom: 10px;
+      }
+
+      dl.login-main--content--form--box{
+        margin-top: 20px;
+        zoom: 1;
+
+        dt.login-main--content--form--box--mall-title{
+          float: left;
+          clear: both;
+          width: 235px;
+          margin: 0 5px 5px 0;
+          padding: 5px 0;
+          font-weight: bold;
+          vertical-align: middle;
+          text-align: right;
+        }
+        dd.login-main--content--form--box--all--mall-form{
+          margin: 0 0 5px 235px;
+          padding-: 3px 0 3px 15px;
+          vertical-align: middle;
+
+          .login-main--content--form--box--all--mall-form--area{
+            border: 1px solid #ccc;
+            font-size: 14px;
+            padding: 5px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            width: 155px;
+            background-color: rgb(250, 255, 189);
+          }
+        }
+        dt.login-main--content--form--box--pass-title{
+          float: left;
+          clear: both;
+          width: 235px;
+          margin: 0 5px 5px 0;
+          padding: 5px 0;
+          font-weight: bold;
+          vertical-align: middle;
+          text-align: right;
+        }
+        dd.login-main--content--form--box--pass-form{
+          margin: 0 0 5px 235px;
+          padding-: 3px 0 3px 15px;
+          vertical-align: middle;
+
+          .login-main--content--form--box--pass-form--area{
+            border: 1px solid #ccc;
+            font-size: 14px;
+            padding: 5px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            width: 155px;
+            background-color: rgb(250, 255, 189);
+          }
+        }
+      }
+      &--btn{
+        margin: 10px 0 15px 250px;
+
+        .login-main--content--form--btn--remember{
+          display: inline-block;;
+        }
+
+        &--text{
+          display: inline-block;
+          font-size: 11px;
+        }
+      }
+      &--submit{
+        margin: 0 0 10px 250px;
+        width: 160px;
+        display: block;
+
+        &--btn{
+          width: 100%;
+          padding: 5px;
+          line-height: 1.4;
+          border: 0;
+          background: #333;
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

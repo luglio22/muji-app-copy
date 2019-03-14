@@ -1,0 +1,986 @@
+.new-user-content{
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 12px;
+  display: block;
+  &--main{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 24px;
+    min-height: 250px;
+
+    h1.new-user-content--main--title{
+      border-bottom: 1px solid #e6e6e6;
+      margin: 0 0 20px;
+      padding-bottom: 10px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #191919;
+    }
+    &--text{
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    &--add-message{
+      margin-bottom: 20px;
+
+      &--content{
+        margin-top: 5px;;
+        font-size: 11px;
+        padding: 5px;
+        display: inline-block;
+        background: #f5f2e9;
+        border-radius: 5px;
+
+        &--text{
+          display: inline-block;
+        }
+        .i.far.fa-clone{
+          padding-right: 10px;
+          transform: rotateY( 180deg );
+        }
+        &--alert-text{
+          background-position: 0 2px;
+          width: 11px;
+          height: 8px;
+          padding: 0 2px 0 0;
+          color: #333333;
+        }
+      }
+    }
+  }
+  table.new-user-content--main--login{
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 0;
+
+    caption.new-user-content--main--login--titile{
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    tbody.new-user-content--main--login--info{
+      box-sizing: content-box;
+      display: table-row-group;
+      vertical-align: middle;
+      border-spacing: 0;
+      color: #333;
+      line-height: 1.5;
+
+      tr.new-user-content--main--login--info--pc-mail{
+        box-sizing: content-box;
+
+        th.new-user-content--main--login--info--pc-mail--left{
+          font-weight: bold;
+          padding: 10px;
+          border: 0 solid #ddd;
+          border-width: 1px 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+
+          .new-user-content--main--login--info--pc-mail--left--text {
+            text-align: left;
+          }
+          .new-user-content--main--login--info--pc-mail--left--note{
+            padding-left: 10px;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: left;
+          }
+        }
+        td.new-user-content--main--login--info--pc-mail--right{
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-width: 1px 1px 1px 0;
+
+          .new-user-content--main--login--info--pc-mail--right--text{
+            display: inline-block;
+          }
+
+          .new-user-content--main--login--info--pc-mail--right--email{
+            display: inline-block;
+            background: rgb(255, 153, 153);
+          }
+          .new-user-content--main--login--info--pc-mail--right--note{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+          }
+
+          .new-user-content--main--login--info--pc-mail--right--example{
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 11px;
+          }
+        }
+      }
+      tr.new-user-content--main--login--info--phone-mail{
+        box-sizing: content-box;
+
+        td.new-user-content--main--login--info--phone-mail--right{
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--login--info--phone-mail--right--text{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+          }
+          input.new-user-content--main--login--info--phone-mail--right--main{
+            background: rgb(255, 153, 153);
+            max-width: 130px;
+            margin: 0 5px;
+          }
+
+          .new-user-content--main--login--info--phone-mail--right--at-mark{
+            display: inline-block;
+            font-size: 11px;
+          }
+
+          select.new-user-content--main--login--info--phone-mail--right--sub{
+            width: 120px;
+            background: rgb(255, 153, 153);
+          }
+
+          .new-user-content--main--login--info--phone-mail--right--note{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+          }
+          .new-user-content--main--login--info--phone-mail--right--example{
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 11px;
+          }
+          .new-user-content--main--login--info--phone-mail--right--description{
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 11px;
+          }
+          .new-user-content--main--login--info--phone-mail--right--explain{
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 11px;
+          }
+          .new-user-content--main--login--info--phone-mail--right--not-able{
+            color: #666;
+            font-size: 11px;
+            text-decoration: none;
+
+            .i.far.fa-clone{
+              display: inline-block;
+              margin-top: 20px;
+              transform: rotateY( 180deg );
+            }
+            .new-user-content--main--login--info--phone-mail--right--not-able--text{
+              display: inline-block;
+              margin-left: 5px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      tr.new-user-content--main--login--info--password{
+        box-sizing: content-box;
+
+        th.new-user-content--main--login--info--password--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--login--info--password--left--text{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+          }
+          .new-user-content--main--login--info--password--left--essential{
+            display: inline-block;
+            font-size: 11px;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--login--info--password--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--login--info--password--right--pass-form{
+            background: rgb(255,153,153);
+            display: inline-block;
+          }
+          .new-user-content--main--login--info--password--right--text{
+            margin-left: 5px;
+            font-size: 11px;
+            display: inline-block;
+          }
+          .new-user-content--main--login--info--password--right--note{
+            margin-top: 5px;
+            font-size: 10.5px;
+            background: #f5f2e9;
+            border-radius: 5px;
+            padding: 5px;
+            width: 260px;
+          }
+        }
+      }
+      tr.new-user-content--main--login--info--confirm-pass{
+        box-sizing: content-box;
+
+        th.new-user-content--main--login--info--confirm-pass--left{
+          font-weight: bold;
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--login--info--confirm-pass--left--text{
+            margin-left: 5px;
+            font-size: 11px;
+            display: inline-block;
+          }
+
+          .new-user-content--main--login--info--confirm-pass--left--note{
+            display: inline-block;
+            font-size: 11px;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--login--info--confirm-pass--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--login--info--confirm-pass--right--form{
+            background: rgb(255,153,153);
+          }
+        }
+      }
+    }
+  }
+  table.new-user-content--main--personal{
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 0;
+
+    caption.new-user-content--main--personal--title{
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    tbody.new-user-content--main--personal--body{
+      box-sizing: content-box;
+
+      tr.new-user-content--main--personal--body--name{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--name--left{
+          font-weight: bold;
+          padding: 10px;
+          border: 0 solid #ddd;
+          border-width: 1px 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--name--left--text{
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--name--left--note{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--personal--body--name--right{
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-width: 1px 1px 1px 0;
+
+          .new-user-content--main--personal--body--name--right--family-text{
+            display: inline-block;
+            font-weight: normal;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--name--right--family--form{
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--name--right--last-text{
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--name--right--last--form{
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--name--right--note{
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 5px;
+            font-size: 11px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--name--right--ex{
+            color: #666;
+            font-size: 11px;
+            margin-top: 5px;
+            display: block;
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--kana{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--kana--left{
+          font-weight: bold;
+          padding: 10px;
+          border: 0 solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--kana--left--text{
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--kana--left--note{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--personal--body--kana--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--kana--right--family-text{
+            display: inline-block;
+            font-weight: normal;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--kana--right--family--form{
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--kana--right--last-text{
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--kana--right--last--form{
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--kana--right--note{
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 5px;
+            font-size: 11px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--kana--right--ex{
+            color: #666;
+            font-size: 11px;
+            margin-top: 5px;
+            display: block;
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--postal-code{
+        box-sizing: content-box;
+        th.new-user-content--main--personal--body--postal-code--left{
+          text-align: left;
+          font-weight: bold;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          .new-user-content--main--personal--body--postal-code--left--text{
+            margin-left: 10px;
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--postal-code--left--note{
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+          }
+        }
+        td.new-user-content--main--personal--body--postal-code--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 1px 1px 1px 0;
+
+          .new-user-content--main--personal--body--postal-code--right--icon{
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--postal-code--right--form{
+            display: inline-block;
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          botton.new-user-content--main--personal--body--postal-code--right--btn{
+            display: inline-block;
+            height: 20px;
+            width: 60px;
+            background: #333;
+            border-radius: 2px;
+            .new-user-content--main--personal--body--postal-code--right--btn--link{
+              text-decoration: none;
+              padding: 2px 5px;
+              color: #fff;
+            }
+          }
+          .new-user-content--main--personal--body--postal-code--right--note{
+            display: inline-block;
+            margin-left: 5px;
+            font-weight: normal;
+          }
+          .new-user-content--main--personal--body--postal-code--right--description{
+            padding: 5px;
+            background: #f5f2e9;
+            border-radius: 5px;
+            margin-top: 5px;
+            width: 320px;
+            &--up{
+              font-size: 11px;
+              font-weight: lighter;
+            }
+            &--down{
+              font-size: 11px;
+              font-weight: lighter;
+            }
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--prefecture{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--prefecture--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+          .new-user-content--main--personal--body--prefecture--left--text{
+            margin-left: 10px;
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--prefecture--left--note{
+            display: inline-block;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--personal--body--prefecture--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--prefecture--right--form{
+            display: inline-block;
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--prefecture--right--box {
+            display: inline-block;
+            background: #f5f2e9;
+            border-radius: 5px;
+            margin-left: 10px;
+
+            &--text{
+              font-size: 11px;
+              margin-left: 5px;;
+              font-weight: normal
+            }
+          }
+          .new-user-content--main--personal--body--prefecture--right--ex{
+            color: #666;
+            font-size: 11px;
+            margin-top: 5px;
+            display: block;
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--city{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--city--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+          .new-user-content--main--personal--body--city--left--text{
+            margin-left: 10px;
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--city--left--add{
+            display: inline-block;
+            margin-left: 5px;
+          }
+          .new-user-content--main--personal--body--city--left--note{
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 5px;
+          }
+        }
+        td.new-user-content--main--personal--body--city--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--city--right--form{
+            display: inline-block;
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--city--right--text {
+            display: inline-block;
+            border-radius: 5px;
+            margin-left: 10px;
+          }
+          .new-user-content--main--personal--body--city--right--ex{
+            color: #666;
+            font-size: 11px;
+            margin-top: 5px;
+            display: block;
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--address{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--address--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--address--left--text{
+            display: inline-block;
+          }
+
+          .new-user-content--main--personal--body--address--left--note{
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 5px;
+            font-size: 11px;
+          }
+        }
+        td.new-user-content--main--personal--body--address--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--address--right--form{
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--address--right--text{
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 5px;
+            font-size: 11px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--address--right--ex{
+            color: #666;
+            font-size: 11px;
+            margin-top: 5px;
+            display: block;
+          }
+          .new-user-content--main--personal--body--address--right--description{
+            background: #f5f2e9;
+            font-weight: normal;
+            border-radius: 5px;
+            width: 260px;
+
+            &--text{
+              font-size: 11px;
+            }
+          }
+          .new-user-content--main--personal--body--address--right--explanation{
+            background: #f5f2e9;
+            margin-top: 5px;
+            border-radius: 5px;
+
+            &--text{
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--building{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--building--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          font-weight: normal;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--building--left--text{
+            margin-left: 5px;
+          }
+        }
+        td.new-user-content--main--personal--body--building--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--building--right--form{
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+            width: 60%;
+          }
+
+          .new-user-content--main--personal--body--building--right--text{
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 5px;
+          }
+
+          .new-user-content--main--personal--body--building--right--ex {
+            color: #666;
+            font-size: 11px;
+            margin-top: 5px;
+            display: block;
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--postal-name{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--postal-name--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          font-weight: normal;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--postal-name--left--text{
+            margin-left: 5px;
+          }
+        }
+
+        td.new-user-content--main--personal--body--postal-name--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--postal-name--right--form{
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+            width: 60%;
+          }
+
+          .new-user-content--main--personal--body--postal-name--right--note{
+            display: inline-block;
+            font-size: 12px;
+            margin-left: 5px;
+            font-weight: normal;
+          }
+
+          .new-user-content--main--personal--body--postal-name--right--text{
+            font-size: 12px;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 5px;
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--phone{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--phone--left{
+          font-weight: bold;
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--phone--left--text{
+            margin-left: 5px;
+            display: inline-block;
+          }
+
+          .new-user-content--main--personal--body--phone--left--note{
+            display: inline-block;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--personal--body--phone--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--phone--right--form{
+            display: inline-block;
+            background: rgb(255, 153, 153);
+            display: inline-block;
+            resize: none;
+            line-height: 7px;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--phone--right--text{
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .new-user-content--main--personal--body--phone--right--ex{
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 11px;
+          }
+          .new-user-content--main--personal--body--phone--right--message{
+            background: #f5f2e9;
+            margin-top: 5px;
+            border-radius: 5px;
+            width: 280px;
+
+            .new-user-content--main--personal--body--phone--right--message--text{
+              font-size: 11px;
+              font-weight: lighter;
+            }
+            .new-user-content--main--personal--body--phone--rightmessage--add{
+              font-size: 11px;
+              font-weight: lighter;
+            }
+          }
+        }
+      }
+      tr.new-user-content--main--personal--body--tel{
+        box-sizing: content-box;
+        th.new-user-content--main--personal--body--tel--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          font-weight: normal;
+          width: 245px;
+          text-align: left;
+        }
+        td.new-user-content--main--personal--body--tel--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          input.new-user-content--main--personal--body--tel--right--form{
+            box-sizing: content-box;
+          }
+          .new-user-content--main--personal--body--tel--right--text{
+            display: inline-block;
+            font-weight: lighter;
+          }
+          .new-user-content--main--personal--body--tel--right--ex{
+            font-size: 11px;
+            color: #666;
+            display: block;
+            margin-top: 5px;
+          }
+        }
+      }
+      //途中ラジオボタンの製作
+      tr.new-user-content--main--personal--body--gender{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--gender--left{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          width: 245px;
+          text-align: left;
+          background: #f5f5f5;
+
+          .new-user-content--main--personal--body--gender--left--text{
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--gender--left--note{
+            display: inline-block;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--personal--body--gender--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+        }
+      }
+      tr.new-user-content--main--personal--body--birth{
+        box-sizing: content-box;
+
+        th.new-user-content--main--personal--body--birth--left{
+          font-weight: bold;
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 0 1px 1px;
+          background: #f5f5f5;
+          width: 245px;
+          text-align: left;
+
+          .new-user-content--main--personal--body--birth--left--text{
+            display: inline-block;
+          }
+          .new-user-content--main--personal--body--birth--left--note{
+            display: inline-block;
+            font-weight: normal;
+          }
+        }
+        td.new-user-content--main--personal--body--birth--right{
+          padding: 10px;
+          border: solid #ddd;
+          border-width: 0 1px 1px 0;
+
+          .new-user-content--main--personal--body--birth--right--text{
+            display: inline-block;
+            font-weight: normal;
+          }
+          .new-user-content--main--personal--body--birth--right--year{
+            display: inline-block;
+
+            .new-user-content--main--personal--body--birth--right--year--form{
+              display: inline-block;
+              background: rgb(255, 153, 153);
+              display: inline-block;
+              resize: none;
+              line-height: 7px;
+              vertical-align: middle;
+              width: 50px;
+            }
+            .new-user-content--main--personal--body--birth--right--year--text{
+              display: inline-block;
+              font-weight: normal;
+            }
+          }
+          .new-user-content--main--personal--body--birth--right--month{
+            display: inline-block;
+
+            .new-user-content--main--personal--body--birth--right--month--form{
+              display: inline-block;
+              width: 80px;
+            }
+            .new-user-content--main--personal--body--birth--right--month--text{
+              display: inline-block;
+            }
+          }
+          .new-user-content--main--personal--body--birth--right--day{
+            display: inline-block;
+
+            .new-user-content--main--personal--body--birth--right--day--form{
+              display: inline-block;
+              width: 80px;
+            }
+            .new-user-content--main--personal--body--birth--right--day--text{
+              display: inline-block;
+            }
+          }
+          .new-user-content--main--personal--body--birth--right--note{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  ul.new-user-content--main--bottom{
+    zoom: 1;
+    padding: 0;
+    margin: 0;
+
+    li.new-user-content--main--bottom--prev{
+      float: left;
+      list-style: none;
+
+      .new-user-content--main--bottom--prev--link{
+        color: #333333;
+      }
+    }
+    li.new-user-content--main--bottom--list{
+      width: 160px;
+      margin-left: 270px;
+      text-align: center;
+      list-style: none;
+
+      .new-user-content--main--bottom--list--btm{
+        display: block;
+        overflow: hidden;
+        padding: 5px;
+        color: #fff;
+        background: #333;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12px;
+
+        &--link{
+          background: #333;
+          color: #fff;
+          display: block;
+          border: none;
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+}

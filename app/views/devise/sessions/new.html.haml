@@ -1,0 +1,25 @@
+= render "shared/header"
+.login-main
+  .login-main--content
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .login-main--content--title
+        %h1.login-main--content--title--text ログイン
+      .login-main--content--form
+        .login-main--content--form--title MUJI.netメンバーの方
+        .login-main--content--form--text メールアドレスとパスワードを入力してログインしてください。
+        %dl.login-main--content--form--box
+          %dt.login-main--content--form--box--mall-title
+            %label.login-main--content--form--boxm--all-title--text メールアドレス
+          %dd.login-main--content--form--box--all--mall-form
+            = f.email_field :email, autofocus: true, autocomplete: "email",class: "login-main--content--form--box--all--mall-form--area"
+          %dt.login-main--content--form--box--pass-title
+            %label.login-main--content--form--box--pass-title--text パスワード
+          %dd.login-main--content--form--box--pass-form
+            = f.password_field :password, autocomplete: "current-password",class: "login-main--content--form--box--pass-form--area"
+              - if devise_mapping.rememberable?
+          .login-main--content--form--btn
+            = f.check_box :remember_me, class: "login-main--content--form--btn--remember"
+            .login-main--content--form--btn--text 次回から自動的にログインする
+          .login-main--content--form--submit
+            = f.submit "ログイン", class: "login-main--content--form--submit--btn"
+= render "devise/shared/links"
