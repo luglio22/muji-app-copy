@@ -70,3 +70,5 @@ end
   gem 'erb2haml'
   gem 'devise'
   gem 'jquery-rails'
+  gem "chartkick"
+  gem 'chartable'

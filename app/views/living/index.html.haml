@@ -1,0 +1,63 @@
+= render "shared/header"
+.living-top
+  = render "shared/side"
+  .living-top--page
+    .living-top--page--up
+      %h1.living-top--page--up--title 新商品｜家具・家電
+      %nav.living-top--page--up--content
+        %ul.living-top--page--up--content--inner
+          %li.living-top--page--up--content--inner--furniture
+            = link_to "#", class: "living-top--page--up--content--inner--furniture--link" do
+              = image_tag "https://img.muji.net/img/item/4550002970659_03_180.jpg", class: "living-top--page--up--content--inner--furniture--link--img"
+              .living-top--page--up--content--inner--furniture--link--text 新商品｜家具・家電
+          %li.living-top--page--up--content--inner--bed
+            = link_to "#", class: "living-top--page--up--content--inner--bed--link" do
+              = image_tag "https://img.muji.net/img/item/4550002877804_180.jpg", class: "living-top--page--up--content--inner--bed--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜寝具
+          %li.living-top--page--up--content--inner--lag
+            = link_to "#", class: "living-top--page--up--content--inner--lag--link" do
+              = image_tag "https://img.muji.net/img/item/4550002882990_180.jpg", class: "living-top--page--up--content--inner--lag--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜ラグ・カーテン
+          %li.living-top--page--up--content--inner--miscellaneous
+            = link_to "#", class: "living-top--page--up--content--inner--miscellaneous--link" do
+              = image_tag "https://img.muji.net/img/item/4550182086447_180.jpg", class: "living-top--page--up--content--inner--miscellaneous--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜生活雑貨
+          %li.living-top--page--up--content--inner--stationery
+            = link_to "#", class: "living-top--page--up--content--inner--stationery--link" do
+              = image_tag "https://img.muji.net/img/item/4550182133134_180.jpg", class: "living-top--page--up--content--inner--stationery--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜文房具
+          %li.living-top--page--up--content--inner--health
+            = link_to "#", class: "living-top--page--up--content--inner--health--link" do
+              = image_tag "https://img.muji.net/img/item/4550002868468_180.jpg", class: "living-top--page--up--content--inner--health--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜ヘルス＆ビューティ
+          %li.living-top--page--up--content--inner--flower
+            = link_to "#", class: "living-top--page--up--content--inner--flower--link" do
+              = image_tag "https://img.muji.net/img/item/0280001009143_180.jpg", class: "living-top--page--up--content--inner--flower--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜花・グリーン
+          %li.living-top--page--up--content--inner--back-to-top
+            = link_to root_path, class: "living-top--page--up--content--inner--back-to-top--link" do
+              = image_tag "https://www.muji.com/jp/img/store/panel/new_180.png", class: "living-top--page--up--content--inner--back-to-top--link--img"
+              .living-top--page--up--content--inner--bed--link--text 新商品｜トップに戻る
+    .living-top--page--search
+      .living-top--page--search--item
+        .living-top--page--search--item--text アイテム
+        .living-top--page--search--item--count 13
+      .living-top--page--search--order
+        .living-top--page--search--order--sort
+          = link_to "おすすめ", "#", class: "living-top--page--search--order--sort--link"
+        //scssやっていない
+        %ul.living-top--page--search--order--list
+          %li.living-top--page--search--order--list--group
+            =link_to "商品グループ順", "#", class: "living-top--page--search--order--list--group--link"
+          %li.living-top--page--search--order--list--recommend
+            =link_to "おすすめ順", "#", class: "living-top--page--search--order--list--recommend--link"
+          %li.living-top--page--search--order--list--new
+            =link_to "新着順", "#", class: "living-top--page--search--order--list--new--link"
+          %li.living-top--page--search--order--list--cheap
+            =link_to "価格の安い順", "#", class: "living-top--page--search--order--list--cheap--link"
+          %li.living-top--page--search--order--list--expensive
+            =link_to "価格の高い順", "#", class: "living-top--page--search--order--list--expensive--link"
+      .living-top--page--search--refine
+        .i.fas.fa-sliders-h
+        = link_to "絞り込み","#", class: "living-top--page--search--refine--link"
+    = render "shared/footer"

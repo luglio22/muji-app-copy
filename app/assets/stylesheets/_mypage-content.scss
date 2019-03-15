@@ -1,0 +1,608 @@
+.mypage-content{
+  width: 100%;
+  background: #F7F7F7;
+  overflow: hidden;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  margin: 0;
+  padding: 0;
+
+  ul.mypage-content--main{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    li.mypage-content--main--order{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--order--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+
+      ul.mypage-content--main--order--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--order--list--address{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--order--list--address--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--order--list--purchase{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--order--list--purchase--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--order--list--dominate{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--order--list--dominate--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        .mypage-content--main--order--list--coupon{
+          padding: 15px 10px;
+          display: block;
+
+          h3.mypage-content--main--order--list--coupon--title{
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 600;
+          }
+
+          &--text{
+            text-align: center;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    li.mypage-content--main--question{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--question--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+
+      ul.mypage-content--main--question--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--question--list--edit{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--edit--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+
+        }
+        li.mypage-content--main--question--list--cancel{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--cancel--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+        }
+        li.mypage-content--main--question--list--receipt{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--receipt--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+        }
+        li.mypage-content--main--question--list--fee{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--fee--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+        }
+        li.mypage-content--main--question--list--payment{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--payment--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+        }
+        li.mypage-content--main--question--list--delivery{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--delivery--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+        }
+        li.mypage-content--main--question--list--exchange{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--question--list--exchange--link{
+            text-decoration: none;
+            color: #60B3FA;
+            padding: 20px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    li.mypage-content--main--favorite{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--favorite--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      ul.mypage-content--main--favorite--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--favorite--list--product{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--favorite--list--product--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--favorite--list--store{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--favorite--list--store--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    li.mypage-content--main--information{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--information--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      ul.mypage-content--main--information--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--information--list--message{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--information--list--message--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--information--list--mail{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--information--list--mail--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--information--list--anniversary{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--information--list--anniversary--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    li.mypage-content--main--review{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--review--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      ul.mypage-content--main--review--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--review--list--history{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--review--list--history--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--review--list--vote{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--review--list--vote--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--review--list--follow{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--review--list--follow--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+        li.mypage-content--main--review--list--clip{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--review--list--clip--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    li.mypage-content--main--MUJI-CARD{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--MUJI-CARD--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      ul.mypage-content--main--MUJI-CARD--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--MUJI-CARD--list--connect{
+          position: relative;
+          overflow: auto;
+          overflow-x: hidden;
+
+          .mypage-content--main--MUJI-CARD--list--connect--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+            font-size: 13px;
+            z-index: 999;
+          }
+        }
+        li.mypage-content--main--MUJI-CARD--list--no-member{
+          position: relative;
+          overflow: auto;
+          overflow-x: hidden;
+
+          .mypage-content--main--MUJI-CARD--list--no-member--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+            z-index: 999;
+          }
+        }
+        li.mypage-content--main--MUJI-CARD--list--guide{
+          position: relative;
+          overflow: auto;
+          overflow-x: hidden;
+
+          .mypage-content--main--MUJI-CARD--list--guide--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+            z-index: 999;
+          }
+        }
+      }
+    }
+    li.mypage-content--main--else{
+      list-style: none;
+      border-radius: 4px;
+      width: 30%;
+      background: #FFF;
+      margin: 1.1%;
+      font-size: 14px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
+
+      .mypage-content--main--else--title{
+        background: #f7f7f7;
+        margin: -2px;
+
+        &--text{
+          font-size: 16px;
+          padding: 10px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      ul.mypage-content--main--else--list{
+        width: 100%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 10px 0;
+        list-style: none;
+
+        li.mypage-content--main--else--list--camp{
+          position: relative;
+          overflow: auto;
+
+          .mypage-content--main--else--list--camp--link{
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            display: inline-block;
+          }
+
+          .fas.fa-angle-right{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            color: #ddd;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .mypage-content--unsubscribe{
+    color: #60B3FA;
+    margin: 20px auto 60px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+}

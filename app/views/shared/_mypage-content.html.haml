@@ -1,0 +1,92 @@
+.mypage-content
+  %ul.mypage-content--main
+    %li.mypage-content--main--order
+      .mypage-content--main--order--title
+        %h2.mypage-content--main--order--title--text ご注文の情報
+      %ul.mypage-content--main--order--list
+        %li.mypage-content--main--order--list--address
+          =link_to "お届け先一覧","#", class: "mypage-content--main--order--list--address--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--order--list--purchase
+          =link_to "購入履歴", "#", class: "mypage-content--main--order--list--purchase--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--order--list--dominate
+          =link_to "寄付情報", "#", class: "mypage-content--main--order--list--dominate--link"
+          .fas.fa-angle-right
+        .mypage-content--main--order--list--coupon
+          %h3.mypage-content--main--order--list--coupon--title クーポン
+          .mypage-content--main--order--list--coupon--text 現在ご利用できるクーポン・特典はございません。
+    %li.mypage-content--main--question
+      .mypage-content--main--question--title
+        %h2.mypage-content--main--question--title--text ご注文に関するよくある質問
+      %ul.mypage-content--main--question--list
+        %li.mypage-content--main--question--list--edit
+          =link_to "商品の変更・追加について","#", class: "mypage-content--main--question--list--edit--link"
+        %li.mypage-content--main--question--list--cancel
+          =link_to "ご注文後のキャンセルについて", "#", class: "mypage-content--main--question--list--cancel--link"
+        %li.mypage-content--main--question--list--receipt
+          =link_to "領収書の発行について", "#", class: "mypage-content--main--question--list--receipt--link"
+        %li.mypage-content--main--question--list--fee
+          =link_to "配送料について", "#", class: "mypage-content--main--question--list--fee--link"
+        %li.mypage-content--main--question--list--payment
+          =link_to "支払い方法", "#", class: "mypage-content--main--question--list--payment--link"
+        %li.mypage-content--main--question--list--delivery
+          =link_to "お届けについて", "#", class: "mypage-content--main--question--list--delivery--link"
+        %li.mypage-content--main--question--list--exchange
+          =link_to "返品・交換", "#", class: "mypage-content--main--question--list--exchange--link"
+    %li.mypage-content--main--favorite
+      .mypage-content--main--favorite--title
+        %h2.mypage-content--main--favorite--title--text お気に入り
+      %ul.mypage-content--main--favorite--list
+        %li.mypage-content--main--favorite--list--product
+          =link_to "商品","#", class: "mypage-content--main--favorite--list--product--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--favorite--list--store
+          =link_to "フォロー店舗", "#", class: "mypage-content--main--favorite--list--store--link"
+          .fas.fa-angle-right
+    %li.mypage-content--main--information
+      .mypage-content--main--information--title
+        %h2.mypage-content--main--information--title--text お知らせ
+      %ul.mypage-content--main--information--list
+        %li.mypage-content--main--information--list--message
+          =link_to "メッセージ","#", class: "mypage-content--main--information--list--message--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--information--list--mail
+          =link_to "メーリ配信設定", "#", class: "mypage-content--main--information--list--mail--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--information--list--anniversary
+          =link_to "記念日リマインドサービス", "#", class: "mypage-content--main--information--list--anniversary--link"
+          .fas.fa-angle-right
+    %li.mypage-content--main--review
+      .mypage-content--main--review--title
+        %h2.mypage-content--main--review--title--text レビュー
+      %ul.mypage-content--main--review--list
+        %li.mypage-content--main--review--list--history
+          =link_to "レビュー投稿投稿履歴","#", class: "mypage-content--main--review--list--history--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--review--list--vote
+          =link_to "購入した商品にレビューを投稿する", "#", class: "mypage-content--main--review--list--vote--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--review--list--follow
+          =link_to "フォロー中のユーザー", "#", class: "mypage-content--main--review--list--follow--link"
+          .fas.fa-angle-right
+        %li.mypage-content--main--review--list--clip
+          =link_to "クリップしたレビュー", "#", class: "mypage-content--main--review--list--clip--link"
+          .fas.fa-angle-right
+    %li.mypage-content--main--MUJI-CARD
+      .mypage-content--main--MUJI-CARD--title
+        %h2.mypage-content--main--MUJI-CARD--title--text MUJI CARD
+      %ul.mypage-content--main--MUJI-CARD--list
+        %li.mypage-content--main--MUJI-CARD--list--connect
+          =link_to "MUJI Card会員情報とMUJI.netメンバー情報をつなぐ","#", class: "mypage-content--main--MUJI-CARD--list--connect--link"
+        %li.mypage-content--main--MUJI-CARD--list--no-member
+          =link_to "マイル・ショッピングポイント確認会員情報を繋いでない方", "#", class: "mypage-content--main--MUJI-CARD--list--no-member--link"
+        %li.mypage-content--main--MUJI-CARD--list--guide
+          =link_to "MIJI Cardのご案内", "#", class: "mypage-content--main--MUJI-CARD--list--guide--link"
+    %li.mypage-content--main--else
+      .mypage-content--main--else--title
+        %h2.mypage-content--main--else--title--text その他
+      %ul.mypage-content--main--else--list
+        %li.mypage-content--main--else--list--camp
+          =link_to "キャンプ場ご予約確認・変更", "#", class: "mypage-content--main--else--list--camp--link"
+  = link_to "退会の手続き", "#", class: "mypage-content--unsubscribe"

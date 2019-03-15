@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index,:new, :edit, :update] do
   end
+
+  resources :living, only: [:index,:show,:new, :edit, :update] do
+  end
 end

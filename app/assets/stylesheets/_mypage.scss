@@ -1,0 +1,275 @@
+.mypage{
+  display: flex;
+  &--content{
+    margin: 0;
+    padding-left: 20px;
+    width: 1175px;
+    overflow-y: scroll;
+    overflow-x: none;
+    z-index: 1;
+
+    h1.mypage--content--title{
+      font-size: 20px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    ul.mypage--content--main{
+      display: flex;
+      margin: 40px 120px 20px;
+
+      li.mypage--content--main--left{
+        list-style: none;
+        width: 36%;
+        margin: 0 auto;
+
+        .mypage--content--main--left--circle{
+          display: block;
+          height: 190px;
+          width: 190px;
+          border-radius: 95px;
+          position: absolute;
+          z-index: 999;
+          background-color: #fff;
+          top: 270px;
+          right: 715px;
+
+          &--text-up{
+            position: relative;
+            top: 50px;
+            right: -50px;
+            font-size: 15px;
+          }
+          &--text-middle{
+            position: relative;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            top: 50px;
+            right: -50px;
+            display: inline-block;
+          }
+          &--text-down{
+            position: relative;
+            margin-left: 5px;
+            display: inline-block;
+            font-size: 11px;
+            top: 50px;
+            right: -45px;
+          }
+        }
+      }
+
+      li.mypage--content--main--right{
+        list-style: none;
+        width: 58%;
+
+        .mypage--content--main--right--top{
+          margin-bottom: 10px;
+          display: block;
+
+          &--icon{
+            width: 75px;
+            margin-right: 10px;
+            float: left;
+            border-radius: 37.5px;
+            overflow: hidden;
+
+            &--img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          &--name{
+            font-weight: 600;
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+          ul.mypage--content--main--right--top--follow{
+            margin: 0;
+            padding: 0;
+
+            li.mypage--content--main--right--top--follow--left
+            {
+              list-style: none;
+              font-size: 12px;
+              display: inline-block;;
+              line-height: 1.25;
+
+              .mypage--content--main--right--top--follow--left--count{
+                font-size: 16px;
+                display: block;
+                color: #000;
+                font-weight: 600;
+              }
+              .mypage--content--main--right--top--follow--left--text{
+                font-size: 13px;
+                display: block;
+                color: #000;
+                font-weight: 600;
+              }
+            }
+            li.mypage--content--main--right--top--follow--right{
+              list-style: none;
+              font-size: 12px;
+              display: inline-block;;
+              line-height: 1.25;
+
+              .mypage--content--main--right--top--follow--right--count{
+                font-size: 16px;
+                display: block;
+                color: #000;
+                font-weight: 600;
+              }
+              .mypage--content--main--right--top--follow--right--text{
+                font-size: 13px;
+                display: block;
+                color: #000;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .mypage--content--main--right--edit{
+          display: block;
+          .mypage--content--main--right--top--edit--link{
+            color: #60B3FA;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 15px;
+          }
+        }
+        .mypage--content--main--right--score{
+          margin: 20px auto;
+          padding: 15px 20px;
+          border: 1px solid #dedede;
+          text-align: left;
+          border-radius: 2px;
+
+          &--mile{
+            font-size: 14px;
+            padding: 0 0 5px;
+
+            &--link{
+              text-decoration: none;
+              color: #333;
+              position: relative;
+              line-height: 1.8;
+              display: block;
+
+              &--text{
+                display: inline-block;
+              }
+
+              &--count{
+                display: inline-block;
+                font-weight: bold;
+                margin: 0 2px 0 2px;
+              }
+
+              &--mile{
+                display: inline-block;
+              }
+
+              .fas.fa-angle-right{
+                display: inline-block;
+                float: right;
+                padding-right: 20px;
+                font-size: 20px;
+              }
+            }
+          }
+
+          &--point{
+            font-size: 14px;
+            padding: 0 0 5px;
+
+            &--link{
+              text-decoration: none;
+              color: #333;
+              position: relative;
+              line-height: 1.8;
+              display: block;
+
+              &--text{
+                display: inline-block;
+              }
+
+              &--count{
+                display: inline-block;
+                font-weight: bold;
+                margin: 0 2px 0 2px;
+              }
+
+              &--jp{
+                display: inline-block;
+              }
+
+              .fas.fa-angle-right{
+                display: inline-block;
+                float: right;
+                padding-right: 20px;
+                font-size: 20px;
+              }
+
+            }
+
+
+          }
+
+          &--achieve{
+            font-size: 14px;
+            padding: 0 0 5px;
+
+            &--link{
+              text-decoration: none;
+              color: #333;
+              position: relative;
+              line-height: 1.8;
+              display: block;
+
+              &--text-left{
+                display: inline-block;
+                font-weight: bold;
+                margin: 0 2px 0 2px;
+              }
+
+              &--point{
+                display: inline-block;
+              }
+
+              &--text-right{
+                display: inline-block;
+              }
+
+              &--mile-left{
+                display: inline-block;
+                font-weight: bold;
+                margin: 0 2px 0 2px;
+              }
+
+              &--mile-right{
+                display: inline-block;
+              }
+            }
+          }
+          &--limit{
+            font-size: 14px;
+            padding: 0 0 5px;
+
+            &--link{
+              text-decoration: none;
+              color: #333;
+              position: relative;
+              line-height: 1.8;
+              display: block;
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+

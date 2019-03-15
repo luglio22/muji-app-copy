@@ -1,0 +1,56 @@
+= render "shared/header"
+.mypage
+  = render "shared/side"
+  .mypage--content
+    %h1.mypage--content--title マイページ
+    %ul.mypage--content--main
+      %li.mypage--content--main--left
+        = pie_chart @mile, colors: ["rgba(161,18,44,1)"]
+        .mypage--content--main--left--circle
+          .mypage--content--main--left--circle--text-up MUJI mile
+          .mypage--content--main--left--circle--text-middle
+            = @user.mile
+          .mypage--content--main--left--circle--text-down miles
+      %li.mypage--content--main--right
+        .mypage--content--main--right--top
+          .mypage--content--main--right--top--icon
+            =image_tag "https://www.muji.com/jp/store/review/img/avatar_default.png", class: "mypage--content--main--right--top--icon--img"
+          .mypage--content--main--right--top--name
+            .mypage--content--main--right--top--name--text
+              = @user.family_name
+              = @user.last_name
+          %ul.mypage--content--main--right--top--follow
+            %li.mypage--content--main--right--top--follow--left
+              .mypage--content--main--right--top--follow--left--count 0
+              .mypage--content--main--right--top--follow--left--text フォロワー
+            %li.mypage--content--main--right--top--follow--right
+              .mypage--content--main--right--top--follow--right--count 0
+              .mypage--content--main--right--top--follow--right--text フォロー中
+        .mypage--content--main--right--edit
+          =link_to "メンバー情報の変更","#", class: "mypage--content--main--right--top--edit--link"
+        .mypage--content--main--right--score
+          .mypage--content--main--right--score--mile
+            = link_to "#" ,class: "mypage--content--main--right--score--mile--link" do
+              .mypage--content--main--right--score--mile--link--text MUJIマイル
+              .mypage--content--main--right--score--mile--link--count
+                = @user.mile
+              .mypage--content--main--right--score--mile--link--mile マイル
+              .fas.fa-angle-right
+          .mypage--content--main--right--score--point
+            = link_to "#", class: "mypage--content--main--right--score--point--link" do
+              .mypage--content--main--right--score--point--link--text MUJIショッピングポイント
+              .mypage--content--main--right--score--point--link--count 0
+              .mypage--content--main--right--score--point--link--jp 円分
+              .fas.fa-angle-right
+          .mypage--content--main--right--score--achieve
+            =link_to "#", class: "mypage--content--main--right--score--achieve--link" do
+              .mypage--content--main--right--score--achieve--link--text-left 200
+              .mypage--content--main--right--score--achieve--link--point ポイント
+              .mypage--content--main--right--score--achieve--link--text-right 獲得まであと
+              .mypage--content--main--right--score--achieve--link--mile-left 20000
+              .mypage--content--main--right--score--achieve--link--mile-right マイル
+          .mypage--content--main--right--score--limit
+            = link_to "#", class: "mypage--content--main--right--score--limit--link" do
+              .mypage--content--main--right--score--limit--link--test マイル有効期限2020年2月末
+    = render "shared/mypage-content"
+    = render "shared/footer"
