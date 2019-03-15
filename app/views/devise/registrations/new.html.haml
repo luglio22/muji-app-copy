@@ -182,10 +182,10 @@
                 = f.text_field :year, class: "new-user-content--main--personal--body--birth--right--year--form"
                 .new-user-content--main--personal--body--birth--right--year--text 年
               .new-user-content--main--personal--body--birth--right--month
-                = f.select :month, { one: "1" }, { prompt: "---" }, { class:"new-user-content--main--personal--body--birth--right--month--form" }
+                = f.select :month, ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], { prompt: "---" }, { class:"new-user-content--main--personal--body--birth--right--month--form" }
                 .new-user-content--main--personal--body--birth--right--month--text 月
               .new-user-content--main--personal--body--birth--right--day
-                = f.select :day, { one: "1" }, { prompt: "---" }, { class:"new-user-content--main--personal--body--birth--right--day--form" }
+                = f.select :day, ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"], { prompt: "---" }, { class:"new-user-content--main--personal--body--birth--right--day--form" }
                 .new-user-content--main--personal--body--birth--right--day--text 日
               .new-user-content--main--personal--body--birth--right--note (半角数字)
       %table.new-user-content--main--option

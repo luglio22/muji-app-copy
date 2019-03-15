@@ -292,6 +292,7 @@
       z-index: 3;
       position: relative;
       overflow: auto;
+      border-bottom: 1px solid #ccc;
 
       &--item{
         font-size: 13px;
@@ -314,18 +315,17 @@
 
       &--order{
         margin: 0;
-        padding: 0;
+        padding-left: 400px;
         display: inline-block;
 
         &--sort{
           margin: 0;
           padding: 0;
-          text-align: center;
 
           &--link{
             color: #333;
             text-decoration: none;
-            display: flex;
+            display: inline-block;
             align-items: center;
           }
         }

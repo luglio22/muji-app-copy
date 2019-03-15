@@ -119,6 +119,10 @@
           font-weight: bold;
           text-decoration: none;
           border-radius: 2px;
+
+        &:hover{
+          background: #7f0019;
+        }
         }
       }
     }
